@@ -1,0 +1,27 @@
+.food_display{
+    border: 1px lightcoral solid;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: gray;
+    margin: 10px;
+    color: white;
+}
+
+.food_display img{
+    border-radius: 10px;
+}
+
+
+.add_button_div{
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-start;
+}
+.add_button{
+    border-radius: 5px;
+    background-color: rgb(3, 64, 3);
+    color: lightgrey;
+    padding: 5px;
+    width: 50px;
+
+}

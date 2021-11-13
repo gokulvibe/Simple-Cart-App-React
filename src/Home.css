@@ -1,0 +1,21 @@
+
+
+.foods_display{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.header{
+    display: flex;
+    background-color: rgb(37, 33, 41);
+    color: wheat;
+    padding: 10px;
+}
+
+.cart_button{
+    background-color: violet;
+    border-radius: 300px;
+    color: white;
+}
