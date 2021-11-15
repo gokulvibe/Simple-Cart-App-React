@@ -12,6 +12,7 @@
     background-color: rgb(37, 33, 41);
     color: wheat;
     padding: 10px;
+    flex-wrap: wrap;
 }
 
 .cart_button{
