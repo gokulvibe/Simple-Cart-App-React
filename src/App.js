@@ -1,7 +1,7 @@
 import './App.css';
 import Home from './home';
 import Cart from './Cart'
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import {HashRouter, Routes, Route} from 'react-router-dom';
 import { CartProvider } from './cartContext';
 function App() {
   return(
@@ -9,7 +9,7 @@ function App() {
     {/* <CartProvider>
           <Home />
       </CartProvider> */}
-    <BrowserRouter basename="/">
+    <HashRouter basename="/">
           <CartProvider>
             <Routes>
               
@@ -24,7 +24,7 @@ function App() {
         {/* <CartProvider>
           <Home />
         </CartProvider> */}
-    </BrowserRouter>
+    </HashRouter>
       </div>
     
   )
