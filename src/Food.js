@@ -1,8 +1,14 @@
-import React from 'react'
+import React, {useContext} from 'react'
 
 import './Food.css'
 
+import {CartContext} from './cartContext'
+
 function Food({img, name, cost, id, addToCart}) {
+
+    const [cartItems, setCartItems, addCartItems, updateCartItems] = useContext(CartContext)
+
+
     return (
         <div className='food_display'>
             <div className='img'>
@@ -24,7 +30,7 @@ function Food({img, name, cost, id, addToCart}) {
                         "quantity":1,
 
                     }
-                    addToCart(item)
+                    addCartItems(item)
                 }}>Add</button>
             </div>
         </div>

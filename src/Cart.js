@@ -1,23 +1,24 @@
-import React, {useState,useEffect} from 'react'
+import React, {useState,useEffect, useContext} from 'react'
 import './Food.css'
 import './cart.css'
 
+import {CartContext} from './cartContext'
+import { Link } from 'react-router-dom'
 function Cart(props) {
     
-    
+    const [cartItems, setCartItems, addCartItems, updateCartItems] = useContext(CartContext)
     
     return (
         <div className="cart">
         <div className="cart_header">
-            <button className="back_button" onClick={()=>{
-                props.cartActiveUpdate()
-            }
-            }>Back</button>
+            <Link to='/'>
+            <button className="back_button">Back</button>
+            </Link>
         </div>
         <div className='foods_display'>
         {
             
-            props.items.map((item) => (
+            cartItems.map((item) => (
             
                 <div className='food_display'>
                     <div className='img'>
@@ -33,10 +34,10 @@ function Cart(props) {
                         <div className='quantity'>
                             <button className='sub_button' onClick={()=>{
                                 if (item.quantity > 0){
-                                    let temp = props.items;
+                                    let temp = cartItems;
                                     temp[temp.findIndex((obj => obj.id === item.id))].quantity -= 1;
                                     console.log("this is updated")
-                                    props.updateCartItems(temp)
+                                    updateCartItems(temp)
                                 }
 
                             }
@@ -44,10 +45,10 @@ function Cart(props) {
                             }>-</button>
                             <h5>{item.quantity}</h5>
                             <button className='increase_button' onClick={()=>{
-                                let temp = props.items;
+                                let temp = cartItems;
                                 temp[temp.findIndex((obj => obj.id === item.id))].quantity += 1;
                                 console.log("this is updated")
-                                props.updateCartItems(temp)
+                                updateCartItems(temp)
 
                             }
                             }>+</button>
