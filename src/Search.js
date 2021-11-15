@@ -14,14 +14,20 @@ function Search(props) {
     );
 
 
-
+    let handleEnter = (e) => {
+        if (e.key == 'Enter'){
+            props.updateSearchValue(val.current.value)
+        }
+    }
     return (
         
-
         <div className='search_bar'>
-            <input type='text' className='search_input' id='search' ref={val}></input>
+            <input type='text' className='search_input' id='search' ref={val}
+            onKeyDown={handleEnter}></input>
             {/* <SearchIcon /> */}
-            <button className='search_button' onClick={()=>{
+            <button
+            className='search_button'
+            onClick={()=>{
                 updateSearch(val.current.value)
                 console.log(val.current.value);
             }}>Search</button>

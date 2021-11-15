@@ -98,8 +98,13 @@ function Home(addToCart){
             </div>
 
             <div className='foods_display'>
-
+{
+            (data.length === 0)? 
+                        <h3>No Food</h3>
+                    :null
+}
                 {
+                
                     data.map((i) => (
 
                         <Food
