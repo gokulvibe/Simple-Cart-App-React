@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/Simple-Cart-App-React/static/css/main.920a4b52.chunk.css",
-    "main.js": "/Simple-Cart-App-React/static/js/main.4e234b89.chunk.js",
-    "main.js.map": "/Simple-Cart-App-React/static/js/main.4e234b89.chunk.js.map",
+    "main.js": "/Simple-Cart-App-React/static/js/main.8bb23074.chunk.js",
+    "main.js.map": "/Simple-Cart-App-React/static/js/main.8bb23074.chunk.js.map",
     "runtime-main.js": "/Simple-Cart-App-React/static/js/runtime-main.e109900c.js",
     "runtime-main.js.map": "/Simple-Cart-App-React/static/js/runtime-main.e109900c.js.map",
-    "static/js/2.dd836217.chunk.js": "/Simple-Cart-App-React/static/js/2.dd836217.chunk.js",
-    "static/js/2.dd836217.chunk.js.map": "/Simple-Cart-App-React/static/js/2.dd836217.chunk.js.map",
+    "static/js/2.feee2ae2.chunk.js": "/Simple-Cart-App-React/static/js/2.feee2ae2.chunk.js",
+    "static/js/2.feee2ae2.chunk.js.map": "/Simple-Cart-App-React/static/js/2.feee2ae2.chunk.js.map",
     "static/js/3.b57b42fa.chunk.js": "/Simple-Cart-App-React/static/js/3.b57b42fa.chunk.js",
     "static/js/3.b57b42fa.chunk.js.map": "/Simple-Cart-App-React/static/js/3.b57b42fa.chunk.js.map",
     "index.html": "/Simple-Cart-App-React/index.html",
     "static/css/main.920a4b52.chunk.css.map": "/Simple-Cart-App-React/static/css/main.920a4b52.chunk.css.map",
-    "static/js/2.dd836217.chunk.js.LICENSE.txt": "/Simple-Cart-App-React/static/js/2.dd836217.chunk.js.LICENSE.txt"
+    "static/js/2.feee2ae2.chunk.js.LICENSE.txt": "/Simple-Cart-App-React/static/js/2.feee2ae2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e109900c.js",
-    "static/js/2.dd836217.chunk.js",
+    "static/js/2.feee2ae2.chunk.js",
     "static/css/main.920a4b52.chunk.css",
-    "static/js/main.4e234b89.chunk.js"
+    "static/js/main.8bb23074.chunk.js"
   ]
 }
